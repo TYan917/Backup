@@ -1,0 +1,41 @@
+html {
+    padding:0px;
+    margin:0px;
+}
+
+body {
+    position:relative;
+    height:100%;
+    padding:0px;
+    margin:0px;
+}
+
+.side_panel {
+    position:fixed;
+    height:100%;
+    width:330px;
+    overflow:auto;
+    margin-left:0px;
+    padding-left:20px;
+}
+
+.side_panel ul {
+    list-style-type:none;
+    margin-left:0px;
+    padding-left:0px;
+}
+
+.side_panel li {
+    list-style-type:none;
+    margin-left:10px;
+    padding-left:0px;
+}
+
+.main_panel {
+    position:absolute;
+    width: 756px;
+    margin-left:350px;
+    margin-right:0px;
+    padding-left:20px;
+    padding-right:20px;
+}

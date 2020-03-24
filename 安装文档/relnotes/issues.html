@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://
+www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="generator" content=
+        "HTML Tidy, see www.w3.org" />
+        <meta http-equiv="content-type" content=
+        "text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/documentation.css?x=19008365611176892"/>
+
+        <title>Known Issues</title>
+    </head>
+
+    <body>
+        <h2>Release Notes - Known Issues</h2>
+
+        <h3>Release 7.50 rev 6 (April 9, 2019)</h3>
+
+        <p>The following problems are already known and are
+        currently being investigated:</p>
+
+        <ul>
+            <li><b>Browser Only: Digital Certificate Only Valid
+            Until July 09, 2020</b>: The digital certificate used
+            to sign the browser applet has a limited validity. When
+            running in the browser, choose 'Grant always' in the
+            security dialog before that date and it will continue
+            to run after the expiration date. Standalone usage is
+            not affected at all. Please refer also to the SAP Note
+            501229 and <a href="../manual.html#loio325b651aff9045ee8c0d3475ff49bd0c">Technical
+            Background, Signed Applets</a>.</li>
+
+            <li>
+                <a name="certificates"><b>Browser Only:
+                        "Incompatible Certificates":</b></a>
+                Running a newer
+                version installed on the client than that provided on
+                the web server does not work if the certificates of the
+                two versions are not exactly the same. 7.40 
+                versions have an older certificate. Therefore having a 7.40 
+                version on the web server and a 7.50 version installed
+                on the client means that the newer version will not be
+                permitted to run as an applet from that web server.
+                This means that for running a 7.50 version as an
+                applet, it is required to have a 7.50 version on the
+                Web Server.
+            </li>
+
+            <li>
+                <b>HTML Control:</b> 
+
+                <ul>
+
+                    <li>Text input fields in HTML forms appear
+                    wider than in the SAPGUI for Windows. This is
+                    because the average character width is
+                    calculated differently. This may cause some
+                    transactions to look confused (for example,
+                    SE80), but it does not have an impact on the
+                    functionality.<br />
+                    </li>
+                    
+					<li>
+						The clipboard content in the context of inputfields in html forms 
+						and in the context outside the html control are not in sync.
+						This has been <a target="_blank" href="https://bugs.openjdk.java.net/browse/JDK-8093960">reported</a> 
+						to Oracle and in the meantime, a fix is available as part of Java 8 update 77 or newer.
+					</li>
+
+					<li>
+						Usage of the HTML Control in some Java runtime versions seems to randomly trigger a 
+						crash of the whole process caused by a bug in the native part of the JavaFX layer part of the JRE.
+						This has been reported to Oracle and is expected to be fixed for 64-bit in Java 8 update 161.
+					</li>
+
+                    <li>
+                        OS X only:
+                        <ul>
+                            <li>
+                            	When running as an applet in Safari, instanciating the html control fails. 
+                            	This has been <a target="_blank" href="https://bugs.openjdk.java.net/browse/JDK-8093635">reported</a> to Oracle
+                            	and in the meantime, the fix is included in Java 8 update 40 or newer.
+                            	However, DropDown ListBoxes in html forms can't be used by mouse.
+                            </li>
+                            <li>
+                            	On Macs with Retina Display, it can happen, that the html control displays the some content twice. 
+                            	This has been <a target="_blank" href="https://bugs.openjdk.java.net/browse/JDK-8096786">reported</a> to Oracle 
+                            	and in the meantime, a fix is available as part of Java 8 update 40 or newer.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>Linux only: DropDown ListBoxes in html forms can't be used by mouse. 
+                    	This is a known issue in Java 8 and is fixed in Java 8 update 40.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Image Control:</b> 
+
+                <ul>
+                    <li>Cannot handle bitmap files (BMP) with a
+                    color resolution of 8 bits using RLE
+                    compression.</li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Chart Control</b> 
+
+                <ul>
+                    <li>The print and print preview are not yet
+                    fully functional.</li>
+
+                    <li>Saving changes of customization data is
+                    incomplete.</li>
+                </ul>
+            </li>
+
+            <li><b>Unix Only: X colors</b> are wrong (green/blue)
+            when using an X-Server with a color depth &gt; 8 bit
+            and a color byte order different from the client
+            platform (this is a Java Runtime bug occurring on most
+            Unix platforms).</li>
+
+           <li><b>Linux only:</b>
+				<ul>
+					<li>When SUSE Linux Enterprise Server 11 64-bit version is running as VMWare guest OS,
+						SAP GUI for Java crashes as soon as the first HTML Control is called. This is caused by
+						incompatibilities in the underlying native rendering libraries. As a workaround, a 32-bit Java runtime can be used to run SAP GUI for Java,
+						Please be informed, that according to 
+						<a target="_blank" href="http://www.oracle.com/technetwork/java/javase/certconfig-2095354.html">Oracle's support statements</a>, 
+						VMware is not a certified hypervisor.
+					</li>
+					<li>There is an issue with automatic scrolling while dragging, which is caused by a bug in the Java runtime. 
+						More information can be found in the <a target="_blank" href="https://bugs.openjdk.java.net/browse/JDK-6464450">bug report</a> at Oracle.
+					</li>
+				</ul>
+		   </li> 
+           
+           <li><b>OS X only:</b>
+				<ul>
+					<li>
+						Using the Apple Magic Mouse, it can happen that double clicks sometimes are not handled. There are still discussions, whether this is an issue in the Java runtime or in macOS.
+					</li>
+					<li>
+						On macOS High Sierra up to 10.13.1, there is an issue with the Mac menus when running in a different language than English. 
+						Please use 10.13.2 or newer.
+					</li>
+					<li>
+						On macOS Mojave the window titlebars are displayed in light appearance also when Dark Mode has been activated. Running on Java 11, wrong fonts might be used in Html Control.
+					</li>
+					<li>
+						When running the installer or SAP GUI for Java on OS X with Turkish language, 
+						there is a problem related to launching external processes.
+						This is a <a target="_blank" href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8047340">known issue in Java 8</a>  
+						and is fixed in Java 8 update 40.
+					</li>
+					<li>
+						Thai glyphs in some cases are not rendered correctly. This has been <a target="_blank" href="https://bugs.openjdk.java.net/browse/JDK-8039468">reported</a> 
+						to Oracle but there is no information yet, when this is going to be solved. As a workaround, the fonts should be set to Monospaced or Ayuthaya.
+					</li>
+					<li>
+						The implementation for running applets in the browser is not mature and has various issues. 
+						Unless the scenario enforces usage of applets, it is recommened to run SAP GUI for Java on 
+						OS X as a stand-alone application for now.
+					</li>
+					<li>
+						Third party software using accessibility API can cause the Java VM to crash with a SIGSEGV/SIGABRT in AppKit-Thread because
+						the software is calling some API in the JDK which causes the crash. There are various  
+						<a target="_blank" href="https://bugs.openjdk.java.net/browse/JDK-8068886">bug reports</a> related to this issue at Oracle and is fixed in Java 8 update 60.
+						For latest news and possible workarounds, please refer to <a target="_blank" href="http://service.sap.com/sap/support/notes/2134851">SAP note 2134851</a>.
+					</li>
+				</ul>
+		   </li> 
+        </ul>
+    </body>
+</html>
+

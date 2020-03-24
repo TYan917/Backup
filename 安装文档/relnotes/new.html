@@ -1,0 +1,2442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>New in this Release</title>
+        <meta name="generator" content="HTML Tidy, see www.w3.org" />
+        <meta http-equiv="content-type" content= "text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/documentation.css?x=19008365611176892"/>
+    </head>
+    <body>
+        <!--        <link type="text/css" rel="stylesheet" href="../resources/general.css" />
+        -->
+		
+		<h2>Release Notes - New in this Release</h2>
+
+<!--
+        <h3>Release 7.30 rev 7 (September 22, 2014)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Feature:</b>
+                <ul>
+                    <li>
+                        bla
+                    </li>
+                    <li>
+                        bla
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Component:</b>
+                <ul>
+                    <li>
+                        fix 1
+                    </li>
+                    <li>
+                        fix 2
+                    </li>
+                </ul>
+            </li>
+        </ul>
+-->
+
+        <h3>Release 7.50 rev 6 (April 9, 2019)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+           <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>Fedora 29
+                    </li>
+                </ul>
+            </li>
+        
+            <li>
+               <b>macOS only:</b> The JDK to be used for starting SAP GUI for Java can now be defined by setting the path to the JDK bundle with the macOS user defaults system for domain com.sap.platin and key JDKPATH.
+            </li>
+            <li>
+               <b>Tooltips:</b> Showing the tooltip can be invoked by Ctrl+T.
+            </li>
+            <li>
+               <b>Input History:</b> Input History is available now also in editable Grid Control.
+            </li>
+            <li>
+                <b>Keyboard navigation:</b>
+                <ul>
+                    <li>
+                    	Keyboard navigation for RadioButtons in a RadioButtonGroup has been harmonised with the general keyboard navigation rules.
+                    </li>
+                    <li>
+                    	In Grid Control, support for Ctrl+Home, Ctrl+End, Ctrl+PgUP, Ctrl+PgDown has been added.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <b>Bugfixes</b>
+        <ul>
+             <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+                        Subtotals in Grid Control could not be read because of using wrong colors.
+                    </li>
+                    <li>
+                        Some dialog windows did not have a white inset, so they have been hard to identify in front of black background.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>The new version of the third party component used for displaying PDF content introduced a bug causing the built-in print functionality not to work. A workaround has been implemented.</li>
+                </ul>
+        	</li>
+            <li>
+                <b>Keyboard navigation:</b>
+                <ul>
+                    <li>
+                    	Opening the menu of a menu button in Toolbar Control by keyboard has not been possible. Now Alt-Cursor-down opens the menue.
+                    </li>
+                    <li>
+                    	When using Accessibility Mode, navigating to a disabled button, disabled radio button or disabled checkbox resulted in a dead end of tab chain.
+                    </li>
+                    <li>
+                    	Read-only radiobuttons in some cases could not be focused by keyboard in case of using Accessibility Mode.
+                    </li>
+                    <li>
+                    	While using Accessibility Mode, the focus traversal in Grid Control did not work correctly.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>DropDown Listbox:</b>
+                <ul>
+                    <li>
+                    	Flushing DropDown Listboxes, which have not been set to a default value, did not fire when choosing the empty item.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+						Hitting the Escape key in editing mode reverts the edited value in a cell to the original value.
+                    </li>
+                    <li>
+						The feature for stretching text values when reporting changes has been missing, which has sometimes caused ABAP dumps.
+                    </li>
+                    <li>
+						Calls to SET_INFO_TABLE (setting properties ColPosIDOnDemand and SelectedColsOnDemand) could result in ABAP dumps in some cases.
+                    </li>
+                    <li>
+                    	Calls to DELETE_ALL_CELLS_BASE (deleteAllCells) could result in an exception.
+                    </li>
+                    <li>
+                    	A problem with the DELAYED_CHANGED_SEL_CALLBACK event has been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Calendar Control</b>
+                <ul>
+                    <li>
+                    	Various problems with selecting in interval and single day selection modes have been solved.
+                    </li>
+                </ul>
+        	</li>
+        	<li>
+                <b>Inputfields</b>
+                <ul>
+                    <li>
+                    	The F4-help buttons of inputfields, that are located at the very end of a group container, have not been visible. 
+                    	A workaround to horizontally extend the group container has been implemented.
+                    </li>
+                </ul>
+        	</li>
+
+            <li>
+                <b>Stability:</b>
+                <ul>
+                    <li>
+                        Various threading issues have been resolved in order to avoid deadlocks.
+                    </li>
+                    <li>
+                        Some exceptions do no longer happen.
+                    </li>
+                </ul>
+            </li>
+			<li>	
+		        <b>Windows only:</b>
+                <ul>
+                    <li>
+                        When setting the PLATIN_JVMOPT environment variable, an error in the start scripts caused the call to javaw command to fail.
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+
+    	<h3>Release 7.50 rev 5 (December 5, 2018)</h3>
+
+		<b>Enhancements and New Features</b>
+
+        <ul>
+            <li>
+                <b>Support for Java SE 11:</b> SapMachine 11 with OpenJFX 11
+            </li>
+             <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>macOS Mojave (there are some known issues however)
+                    </li>
+                    <li>SLED 15 and SLES 15
+                    </li>
+                </ul>
+            </li>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+						Support for F2 keystroke to start cell editing has been implemented.
+                   </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control and Calendar Control:</b>
+                <ul>
+                    <li>
+						When using the animated focus indication, the then redundant dotted cell focus indication has been removed.
+                   </li>
+                </ul>
+            </li>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>
+                        A new version of the component to display PDFs has been added.
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+                    	Windows and dialogs now have a thin white border. This is in particular helpful when running Dark Mode on macOS Mojave.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Icon font:</b>
+                <ul>
+                    <li>
+                        The icon font used in the themes Blue Crystal and High Contrast Black has been updated. 
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+						The proxy of components in Toolbar Control could not be found in case the function code of the component contains leading blanks.
+                    </li>
+                    <li>
+						An inconsistency setting maximum rows in Grid Control has been fixed. 
+                    </li>
+                    <li>
+						A problem updating radiobuttons of a group from the backend has been solved. 
+                    </li>
+                    <li>
+						The handling of pressF4() in Personas scripts on GuiTextFields has been incorrect. 
+                    </li>
+                    <li>
+						Launching onBeforeRefresh scripts from GuiShellActions did not work. 
+                    </li>
+                </ul>
+            </li>
+      
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                    	In case the width of the columns has not been set by the application, no content has been displayed. A workaround has been implemented.
+                    </li>
+                    <li>
+                    	The Tree Control has not been displayed in case setting the top node id was done before it has been created.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        A problem with the behavior of discontinuous selections has been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Calendar Control</b>
+                <ul>
+                    <li>
+                    	The focus navigation cycle with tab, shift-tab and focus group switch ctrl-tab did not work correctly.
+                    </li>
+
+                </ul>
+        	</li>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                        The state of toggle buttons could have been wrong when scrolling vertically.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tabstrip:</b>
+                <ul>
+                    <li>
+                    	Screens containing a Tabstrip have been broken in case "Low speed connection" has been used.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+						Typing has been blocked while waiting for the search results.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Keyboard:</b>
+                <ul>
+                    <li>
+                    	Ctrl-F1 has not been reported to the backend.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Stability:</b>
+                <ul>
+                    <li>
+                        Various memory leaks related to the Html, Grid and Toolbar Control have been fixed. 
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+    	<h3>Release 7.50 rev 4 (August 24, 2018)</h3>
+
+		<b>Enhancements and New Features</b>
+
+        <ul>
+             <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>Fedora 28  
+                    </li>
+                    <li>openSUSE Leap 15  
+                    </li>
+                    <li>Ubuntu 18.04
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                        The Personas state now is visualized in the status bar 
+                        with different icons and tooltip texts. 
+                    </li>
+                    <li>
+                        The new Personas icon in the status bar can be used 
+                        to open the Personas Manager.
+                    </li>
+                    <li>
+                        Support for ViewPort, which has been introduced with <a href="https://blogs.sap.com/2018/05/24/sap-screen-personas-3.0-sp07-now-available.-more-mobile-capabilities-more-enterprise-features./" target="_blank">SAP Screen Personas 3.0 SP07</a>, has been added.
+                    </li>
+                    <li>
+                    	In TableControl the onCellDoubleClick() event is now supported.
+                    </li>
+                    <li>
+                    	Setting the title of a Grid Control or of a column header is now supported. Also setting the column width now is possible.
+                    </li>
+                    <li>
+                    	In Dropdown Listbox, new entries can be added by scripting.
+                    </li>
+                    <li>
+                    	The Scripting API resetProperty() and resetPropertyToOriginal() is now supported.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Modal dialogs:</b>
+                <ul>
+                    <li>
+                        Modal dialogs, which have been moved by the user, 
+                        now keep their new position, even when they are temporarily deleted and recreated during a server round trip.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Icon font:</b>
+                <ul>
+                    <li>
+                        The icon font used in the themes Blue Crystal and High Contrast Black has been updated. 
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+        
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        DropDown Listboxes set to read-only have been displayed with a wrong background color.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                    	In some cases, an exception caused no content to be displayed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                    	It could happen, that a node, that has been deleted in the meantime, is reported as current selection.
+                    </li>
+                </ul>
+            </li>
+            <li>
+				<b>SAPInfo Control</b>
+				(ABAP class
+				CL_GUI_FRONTEND_SERVICES):
+                <ul>
+                    <li>
+                        Executing sapshcut and sapgui commands with relative path did not work.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                        A Table Control moved to a different part of the screen could cause an exception after a round trip. 
+                    </li>
+                    <li>
+                        In Grid Control, an inconsistency with maximum rows and visible row count values has been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Stability:</b>
+                <ul>
+                    <li>
+                        In special cases, it could happen that sessions were no longer responding.
+                    </li>
+                    <li>
+                        A memory leak related to the Html Control and display of PDF content has been fixed. 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Clipboard:</b>
+                <ul>
+                    <li>
+                        In some cases, pasting tab separated text had additional empty lines.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Localization:</b>
+                <ul>
+                    <li>
+                        Running with some locales resulted in failures during startup.
+                    </li>
+                    <li>
+                        Enabling input history on a per field basis did not work in non-English locales.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+
+    	<h3>Release 7.50 rev 3 (May 9, 2018)</h3>
+
+		<b>Enhancements and New Features</b>
+
+
+        <ul>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                        Flavors are only applied, when a theme is currently running that supports Personas.
+                    </li>
+                    <li>
+                        When hiding the menus in a flavor, only the menus of the ABAP application are hidden to make sure other functionality like clipboard, tracing etc. still is availble.
+                    </li>
+                    <li>
+                        In GuiTextField, the property recommended is now writeable in scripting.
+                    </li>
+                    <li>
+                        In GuiToggleButton, the property selected has been introduced.
+                    </li>
+                    <li>
+                        In GuiTableControl, when trying to apply selections in selectedColumns and selectedRowsAbsolute which are invalid, exceptions are thrown.
+                    </li>
+                    
+                    
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        Copying a range of rows and columns now is skipping empty rows and columns.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Desktop Integration:</b>
+                <ul>
+                    <li>
+                        Mime types for connection documents and SAP shortcuts (*.sapc, *.sap) have been added.   
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Misc:</b>
+                <ul>
+                    <li>
+                        Loading the central configuration using https is now supported.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+   
+        <b>Bugfixes</b>
+
+        <ul>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                        Various problems with layout calculation have been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        There was an issue with typing AltGr characters into editable grid cells.
+                    </li>
+                    <li>
+                        The font sizes of the cell renderer and editor have not been in sync.
+                    </li>
+                    <li>
+                        Horizontal lines have unintentionally been shown in sorted columns in read only grids.
+                    </li>
+                    <li>
+                        Various issues related to checkboxes in editable grid have been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                        The anchor selection was set to a wrong value with multi-selection and shift-click.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                        Tab merging combined with highly dynamic sub screens resulted in wrong object locations and visibility.
+                    </li>
+                    <li>
+                        Various issues in the Flavor Manager regarding rendering and search functionality have been solved.
+                    </li>
+                    <li>
+                        When a Personas flavor has set the text value of a GuiTextComponent, the value change has not been reported to the back end.
+                    </li>
+                    <li>
+                        The size of a page in a GuiTabStrip is now in sync with the size of the GuiTabStrip, which was modified by Personas.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Signature Design:</b>
+                <ul>
+                    <li>
+                    	When using a system dependent scheme set by the user or back end, some background and text colors have been incorrect.
+                    </li>
+                    <li>
+                    	When setting the system dependent scheme to "Default" by the back end, always the blue scheme has been used.
+                    </li>
+                    <li>
+                    	The rendering of group boxes has been incorrect.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+                    	In tree control, the contrast of the text color of tree nodes and the selection background color has been improved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>On some platforms, problems during initialisation of the component resulted in rendering issues.</li>
+                </ul>
+        	</li>
+             <li>
+                <b>Misc:</b>
+                <ul>
+                    <li>
+                        The overwrite caret has been rewritten to solve rendering issues in some environments.
+                    </li>
+                    <li>
+                        Potential deadlocks related to controls have been solved.
+                    </li>
+                </ul>
+            </li>
+       </ul>
+        
+    	<h3>Release 7.50 rev 2 (January 25, 2018)</h3>
+
+		<b>Enhancements and New Features</b>
+
+        <ul>
+             <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>Fedora 27  
+                    </li>
+                    <li>openSUSE Leap 42.3  
+                    </li>
+                    <li>macOS High Sierra
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                        GuiGOSShell, GuiTitle and GuiStatusBar can now be used by SAP Screen Personas.
+                    </li>
+                    <li>
+                        The functionality for tabToElement in GuiWrappingLabel has been implemented.
+                    </li>
+                    <li>
+                        It is now possible to run onLoad or onAfterRefresh scripts during a tab-merge while a modal dialog on top is displayed.
+                    </li>
+                    <li>
+                        GuiTextField now supports to run a onF4 script.
+                    </li>
+                    <li>
+                     	Modifying the maxLength of a Dynpro field is checked against the maxLength set by the 
+                     	application in order to avoid problems by exceeding this length.
+                    </li>                     
+                    <li>
+                        In Tree Control, the double click event now can be invoked by scripting.
+                    </li>                    
+                    <li>
+                        In Calendar Control, the tooltip property is now supported.
+                    </li>
+                    <li>
+                        In Grid Control, the rowCount property is now supported.
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+                    	In Grid Control, contrast of icons, focused cell background and colors for total row/column visualisation have been improved.
+                    </li>
+                    <li>
+                    	In Grid Control, while dragging an object the current drop target was barely visible.
+                    </li>
+                    <li>
+                    	In Table Control, the text in the header of selected columns now is easier to read.
+                    </li>
+                    <li>
+                    	In TextEdit Control, the rendering of borders and colors has been corrected. 
+                    	When being in read only mode, black background color instead of grey is used to increase the contrast.
+                    </li>
+                    <li>
+                    	The rendering of the sash in splitter and docker shells has been harmonised with the color palette of the High Contrast theme.
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <b>Color Schemes for Blue Crystal Theme:</b>
+                <ul>
+                    <li>
+                        The color scheme can now be set by the back end, please refer to 
+                		<a href="https://launchpad.support.sap.com/#/notes/2572308" target="_blank">SAP note 2572308</a>.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Icon font:</b>
+                <ul>
+                    <li>
+                        The icon font used in the themes Blue Crystal and High Contrast Black has been updated. 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        The selection functionality has been rewritten in order to make the behavior more consistent and intuitive.
+                    </li>
+                    <li>
+                        The cell content layout is now more stable when entering and leaving a cell (switching between rendering and editing mode).
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Window Menu:</b>
+                <ul>
+                    <li>
+                        The list of windows is now grouped by connections.
+                    </li>
+                </ul>
+            </li>
+            <li>
+				<b>SAPInfo Control</b>
+				(ABAP class
+				CL_GUI_FRONTEND_SERVICES):
+                <ul>
+                    <li>
+                        DIRECTORY_LIST_FILES now reports additional file attributes.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Input History:</b>
+                <ul>
+                    <li>
+						It is now possible to individually enable input history for fields with input length greater than 60.
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                        Handling of styles related to read-only states has been corrected.
+                    </li>
+                    <li>
+                        In DropDown Listbox, an issue handling the showKeys property has been solved.
+                    </li>
+                    <li>
+                        In Grid Control, the column order has been incorrect when the column order was set by a flavor and the user manually reordered the columns.
+                    </li>
+                    <li>
+                        A GuiTab in GuiTabStrip which has been disabled by a flavor, could still be activated by choosing the tab from the dropdown listbox.
+                    </li>
+                    <li>
+                        In Table Control, the width property of columns has been handled with the wrong metric, 
+                        rowCount and maxRows have been reported incorrectly and clearing the selection by clearSelection() did not work.
+                    </li>
+                    <li>
+                        In Tree Control, various issues related to onSelectionChange() have been fixed.
+                    </li>
+                    <li>
+                        It could happen, that controls modified by a flavor, disappear after a roundtrip.
+                    </li>
+                    <li>
+                        In GuiTextFields, reporting the value of the recommended property has been incorrect.
+                    </li>
+                    <li>
+                        In GuiToolbar, problems with reordering have been solved.
+                    </li>
+                    <li>
+                        In GuiLabel, the iconID has not been reported in call cases.
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                        The background color of headers has been wrong in various themes.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+						In input fields part of a table control, enter and tab key for selecting an item did not work.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Control Enabling:</b>
+                <ul>
+                    <li>
+						It could happen, that controls still have been visible, although the context has been changed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        When extending the selection by ctrl-clicking on a cell, the cell has changed to edit mode.
+                    </li>
+                    <li>
+                        In special cases, an icon with tooltip has not been displayed.
+                    </li>
+                    <li>
+                        It has been possible to delete the content of a cell or column set to read only by keyboard, which resulted in an ABAP dump.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Group Container:</b>
+                <ul>
+                    <li>
+                        In case the text of a Group Container was not set, the position of its content has been wrong.
+                    </li>
+                    <li>
+                        In case the frame has been hidden, the layout has been wrong.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>On some platforms, searching for the available fonts has failed resulting in rendering issues. 
+                    A workaround for a bug in the third party component has been implemented.</li>
+                </ul>
+        	</li>
+            <li>
+                <b>Sashes:</b>
+                <ul>
+                    <li>In some environments, moving the sashes of Splitter and Docker did not work reliably and caused rendering problems. 
+                    A workaround for a bug in the Java Runtime has been implemented and the bug has been reported to OpenJDK.</li>
+                </ul>
+        	</li>
+            <li>
+                <b>Chart Control:</b>
+                <ul>
+                    <li>
+                        A new version of the chart control is used to address various issues.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+		        <b>Rendering:</b>
+                <ul>
+                    <li>
+                        Unnecessary redraws have been removed in various components, 
+                        which have been particularly annoying during window resizes involving server roundtrips.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Windows only:</b>
+                <ul>
+                    <li>
+                        In some environments, creating the Html Control failed because the Java Runtime was unable to load the required native DLLs.
+                        A workaround has been implemented.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+    	<h3>Release 7.50 rev 1 (October 9, 2017)</h3>
+
+
+		<b>Enhancements and New Features</b>
+
+        <ul>
+             <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>Fedora 26  
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Color Schemes for Blue Crystal Theme:</b>
+                <ul>
+                    <li>
+                        Color Schemes are now available for Blue Crystal. 
+                        They can be assigned to systems or even clients to clearly differenciate 
+                        between test, development or productive systems and clients.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Blue Crystal Theme:</b>
+                <ul>
+                    <li>
+                        The background with the striped gradient has been replaced with a bright, solid color.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid and Calendar Control</b>
+                <ul>
+                    <li>The context menu has been reimplemented in order to improve scripting functionality.</li>
+                </ul>
+        	</li>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                    	In Tree Control onDoubleClick(), onCollapseNode() and onExpandNode() are now supported.
+                    </li>
+                    <li>
+                    	In Picture Control onClickControlArea() and onClickPicture() are now supported.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                    	In some cases, data entered has been reverted to the previous value after hitting enter.
+                    </li>
+                    <li>
+                    	The header sometimes has not been redrawn correctly after dragging columns.
+                    </li>
+                    <li>
+                    	Selected checkboxes in tables had a wrong background color.
+                    </li>
+
+                </ul>
+            </li>
+            
+            <li>
+                <b>Calendar Control</b>
+                <ul>
+                    <li>
+                    	The F12 key did not work when a Calendar Control had the focus.
+                    </li>
+                    <li>
+                    	Various issues scrolling and navigating in calendar have been solved.
+                    </li>
+                </ul>
+        	</li>
+            <li>
+                <b>DropDown Listbox:</b>
+                <ul>
+                    <li>
+                    	In flushing DropDown Listboxes, page up/down keys have caused the listbox to close.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>ComboBox Control:</b>
+                <ul>
+                    <li>
+                    	Events have been fired when using keys to navigate through the list. 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                        In List Tree, the wrong item has been copied to the clipboard.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Screen Resize:</b>
+                <ul>
+                    <li>
+                    	Connected to older systems, the screen content always was displayed with standard size independent from the actual window size.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Function module WS_QUERY:</b>
+                <ul>
+                    <li>
+                    	Special types of requests part of a WS_QUERY function call could cause the session to no longer function.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Signature Design:</b>
+                <ul>
+                    <li>
+                    	Running in applet mode, the background color of some areas has been incorrect.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+                    	Icons in a list tree sometimes where hard to recognize. 
+                    </li>
+                    <li>
+                    	Text in selected lines in Table Control has been hard to read. 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>SAP Screen Personas:</b>
+                <ul>
+                    <li>
+                    	Setting the disabledBackgroundColor property in a GuiTextField did not have any effect. 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Keyboard navigation:</b>
+                <ul>
+                    <li>
+                    	Various issues related to tab order and group tabbing have been solved.
+                    </li>
+                    <li>
+                    	Issues using the HOME and END key in groups of radio buttons have been solved.
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+
+        <h3>Release 7.50 (July 31, 2017)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Support for SAP Screen Personas:</b> For details, please refer to 
+                
+                <a href="https://launchpad.support.sap.com/#/notes/2505697" target="_blank">SAP Note 2505697</a>.
+            </li>
+            <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+                    	The font based icons part of the Blue Crystal Theme are now also used for High Contrast Theme in order to improve the rendering quality.
+                    </li>
+                    <li>
+                    	Font-, background- and selection colors in some cases have been changed to provide a better contrast.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Release 7.40 rev 12 (July 4, 2017)</h3>
+        
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Grid Control</b>
+                <ul>
+                    <li>The column width optimization function now has undo support.</li>
+                </ul>
+        	</li>
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                        Tooltip support for all parts of a tree has been implemented.
+                    </li>
+                </ul>
+            </li>
+			<li>
+				<b>Security:</b>
+				<ul>
+					<li>
+						A new trust level has been introduced to specifically allow opening connections by ABAP.
+					</li>
+				</ul>
+			</li>
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        When combining grouping and totals, the grouping icon has been misplaced.
+                    </li>
+                    <li>
+                        The cell background color of a read-only dropdown listbox has been wrong when focused or selected.
+                    </li>
+                    <li>
+                        Reporting of the visible row count has been wrong when the grid has not yet been visible.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Calendar Control:</b>
+                <ul>
+                    <li>
+                        A problem causing a ClassCastException in calendar dialog has been fixed.
+                    </li>
+                    <li>
+                        When backend did not provide short names for weekdays, the names of weekdays have not been displayed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>TextEdit Control:</b>
+                <ul>
+                    <li>
+                        Empty lines have been ignored when sending the text to the backend using GetTextAsR3Table().
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                        Sometimes the column selection or parts of it still has been visible after the node selection has been toggled.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Control Enabling:</b>
+                <ul>
+                    <li>
+                        Sending XML data back from controls, whos control manager is not related to the active Imode, 
+                        could cause ABAP dumps in rare cases. Now the XML data is sent once the appropriate Imode becomes active.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h3>Release 7.40 rev 11 (March 23, 2017)</h3>
+        
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>The rendering quality of bitmaps has been improved.</li>
+                </ul>
+        	</li>
+        </ul>
+        
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        Toggling between editable and read-only ALV resulted in missing toolbar buttons.
+                    </li>
+                    <li>
+                        Issues with hiding rows or columns have been solved.
+                    </li>
+                    <li>
+                        Changing the width of frozen columns could cause screen flickering.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                    	The background color of the html content sometime has been wrong.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>TextEdit Control:</b>
+                <ul>
+                    <li>
+                    	In case of transferring text using row sets instead of a stream, text lines exceeding the row sets length have been truncated.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+				<b>SAPInfo Control</b>
+				(ABAP class
+				CL_GUI_FRONTEND_SERVICES):
+                <ul>
+                    <li>
+                        macOS only: DIRECTORY_LIST_FILES did not work correctly.
+                    </li>
+                </ul>
+
+            </li>
+            <li>
+                <b>SAP UI Landscape:</b>
+                <ul>
+                    <li>
+                        In case of using configuration files created by SAP GUI for Windows
+                        it could happend that the SNC option was on by mistake.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        
+    	<h3>Release 7.40 rev 10 (December 19, 2016)</h3>
+
+
+		<b>Enhancements and New Features</b>
+
+        <ul>
+             <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>Fedora 25  
+                    </li>
+
+                    <li>openSUSE 42.2
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+				<b>SAPInfo Control</b>
+				(ABAP class
+				CL_GUI_FRONTEND_SERVICES):
+                <ul>
+                    <li>
+                        The logic for IS_SCRIPTING_ACTIVE has been changed to be consistent with the SAP GUI for Windows.
+                    </li>
+                    <li>
+                        The method REGISTRY_GET_VALUE has returned misleading results for some parameter values.
+                    </li>
+                </ul>
+            </li>
+            
+             <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>The implementation of the method SET_AUTOREDRAW 
+                    has been missing, which has caused some inconstancies with SAP GUI for Windows.
+                    </li>
+                    <li>Using undo after special actions could result in an ABAP dump.
+                    </li>
+                    <li>Selecting rows or columns could cause a crash in certain conditions.
+                    </li>
+                    <li>Pressing a button in a cell did not work in a special case.
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <b>TextEdit Control:</b>
+                <ul>
+                    <li>
+                        A problem related to prodecting lines has been solved.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                    	The handling of clicks on an area currently showing the overlay popup for rendering text which is truncated otherwise has been corrected.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                    	Printing the content now renders the complete content instead of only the currently visible part.
+                    </li>
+                    <li>
+                    	A particular case displaying PDF in-place did not work.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Input History:</b>
+                <ul>
+                    <li>
+						New input that only differs regarding capitalization from entries already 
+						existing in the history is no longer added to the history list.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Context Menu Control:</b>
+                <ul>
+                    <li>
+						For keyboard handling, now mnemonics are used instead of accelerators.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+						There have been cases, where navigating in the result list has been broken.
+                    </li>
+                    <li>
+						Sometimes the maximum input length of the overlay field has been incorrect.
+                    </li>
+                </ul>
+            </li>
+           
+            <li>
+                <b>Focus:</b>
+                <ul>
+                    <li>
+                        Input fields with F4-help sometimes did not receive the focus 
+                        when set by the ABAP application.
+                    </li>
+                    <li>
+                        In Table Control, it happend that the wrong cell has been focused after a roundtrip.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>Copying the selected text into the clipboard has not been working.</li>
+                </ul>
+        	</li>
+            
+            <li>
+                <b>Embedded Mode:</b>
+                <ul>
+                    <li>Some connection issues related to running in an embedded environment like ABAP in Eclipse have been solved.</li>
+                </ul>
+        	</li>
+        </ul>
+
+
+
+    	<h3>Release 7.40 rev 9 (September 29, 2016)</h3>
+
+
+		<b>Enhancements and New Features</b>
+
+        <ul>
+             <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>Fedora 24  
+                    </li>
+
+                    <li>macOS Sierra 10.12
+                    </li>
+                </ul>
+            </li>
+
+
+            <li>
+                <b>DropDown Listbox:</b>
+                <ul>
+                    <li>
+                    	Showing the keys on individual dropDown listboxes via Screen-Painter 
+                    	property independently from the local user settings is supported now.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Calendar Control:</b>
+                <ul>
+                    <li>
+                        The default date selection has not been reported to the backend.
+                    </li>
+                    <li>
+						Setting the selected date in the past outside the visible time interval resulted in an exception.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                        In some cases, incorrect column widths have been reported to the backend, which could cause layout issues.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Radio Buttons:</b>
+                <ul>
+                    <li>
+                        Radio buttons belonging to one group sometimes were behaving like being part of different groups. 
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                        Values of toggle buttons in Html forms changed by the user has not been reported correctly in case of using PostDATA.
+                    </li>
+                    <li>
+                        Deciding on the encoding of the Html content now is left to the Html rendering engine instead of 
+                        overwriting with a potentially wrong encoding set by the communication layer.
+                    </li>                    
+                </ul>
+            </li>
+            
+            <li>
+                <b>Desktop Integration:</b>
+                <ul>
+                    <li>
+                        The mechanism to choose the appropriate external application to display 
+                        data received from the backend via Data Provider has been improved. 
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+                        Editing the search string always used the insert mode, even when overwrite mode was active otherwise.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>
+                        A new version of the component to display PDFs fixes an issue related to saving the PDF to a local file.
+                    </li>
+                    <li>
+                        Linux only: The mechanism to generate the list of available fonts has been extended
+                        to search in more locations to prevent empty or incomplete documents to be displayed because of lacking fonts.
+                    </li>
+
+                </ul>
+            </li>
+            
+            <li>
+                <b>Shortcut file:</b>
+                <ul>
+                    <li>
+                        After opening a connection from a shortcut file including an SSO token, the file is now deleted.
+                        Before, old shortcut files no longer working piled up on the file system.
+                    </li>
+                    <li>
+                        Opening a connection from a shortcut file sometimes resulted in an inconsistent session state.
+                    </li>
+                </ul>
+            </li>
+            
+			<li>
+				<b>Security:</b>
+				<ul>
+					<li>
+						The dialog to change the trust level of a system failed to persist the chosen value in some languages.
+					</li>
+				</ul>
+			</li>
+			
+            <li>
+                <b>OS X only:</b>
+                <ul>
+                    <li>
+                        A problem was fixed related to choosing the latest Java runtime on application launch.
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+
+    	<h3>Release 7.40 rev 8 (May 31, 2016)</h3>
+
+		<b>Enhancements and New Features</b>
+        <ul>
+             <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>Ubuntu 16.04  
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Logon Langauge:</b>
+                <ul>
+                    <li>
+                    	When specifying a language in a connection, now this parameter gets handled immediately when opening the connection instead of later as part of the logon screen.
+                    	This way, also the logon screen is displayed in the requested language and setting the language also works in cases, when the logon screen is automatically skipped.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+                        When editing the search string and hitting return, in special cases an endless loop caused the process to hang.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                    	Grouping cells could result in wrong content to be displayed.
+                    </li>
+                    <li>
+                    	The undo of inserting a new row could cause an ABAP dump.
+                    </li>
+                    <li>
+                    	Adding a new row in an empty grid could cause an ABAP dump.
+                    </li>
+                    <li>
+                    	Icons sometimes have been displayed in adjacent cells with hidden text.
+                    </li>
+                    <li>
+                    	In case inconsistent table content has been set by the application, an ABAP dump could happen. 
+                    	A workaround has been implemented to prevent sending back unexpected data to the application.
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                        An issue with the encoding of POST data has been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Desktop Integration:</b>
+                <ul>
+                    <li>URLs already encoded have been encoded again. This has caused displaying URLs in an external browser in those cases to fail.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    	<h3>Release 7.40 rev 7 (March 17, 2016)</h3>
+		<b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>SAP UI Landscape:</b>
+                <ul>
+                    <li>The landscape converter now also supports exporting port numbers instead of service names 
+                    	when converting old SAP logon configuration files from SAP GUI for Windows.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+                        It could happen that an unintended request for the result list of enhanced search could block the session for further input.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                    	Exceptions occurring in special cases resulted in an unusable screen.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tabstrip:</b>
+                <ul>
+                    <li>
+                    	Switching between screens both having tabstrips could result in a blank popup menu to be shown in the navigation menu.
+                    </li>
+                    <li>
+                    	Switching between screens both having tabstrips could result in exceptions causing the screen no longer to be usable.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Grid Control:</b>
+                <ul>
+                    <li>
+                    	Some exceptions have been fixed.
+                    </li>
+                    <li>
+                    	Icons on buttons disappeared after clicking on them.
+                    </li>
+                    <li>
+                    	The drop focus is no longer shown at locations where dropping is not possible.
+                    </li>
+                    <li>
+                    	The cursor is more consistent with the availability of target drop actions while dragging.
+                    </li>
+                    <li>
+                    	Incorrect drop operations outside the GUI window are now prevented.
+                    </li>
+                    <li>
+                    	The active cursor zone placement for the subtotal row expand icons has been corrected.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                        When performing a POST via a SAPEVENT, the data entered in a form was only transferred on the second attempt.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                    	The coding is now more robust in case items can not be found because of receiving incorrect ids from the back end.
+                    </li>
+                    <li>
+                    	A threading issue regarding expanding nodes has been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>TextEdit Control:</b>
+                <ul>
+                    <li>
+                    	When changing the text via scripting, the change has not been sent back to the back end.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Calendar Control:</b>
+                <ul>
+                    <li>
+                    	In some cases, there have been issues with the layout of the calendar.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Signature Design using a System Dependent Scheme:</b>
+                <ul>
+                    <li>
+                    	The ABAP call requesting the current background color did not receive the correct value when a system dependent scheme was active.
+                    	This resulted in a background color in the html control inconsistent with the rest of the window. 
+                    </li>
+                    <li>
+                    	The background color of controls like Toolbar and Tree when located in a dock shell has been inconsistent.
+                    </li>
+                    <li>
+                    	An inconsistent color in Grid control has been fixed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+                    	Issues with text and background color of cells inside a Grid control have been fixed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Application Quit:</b>
+                <ul>
+                    <li>
+                    	Quitting the application from the "File" menu could result in a hang when several windows were open.
+                    </li>
+                    <li>
+                    	<b>OS X only:</b> After problems with the network connection sometimes it has not been possible to quit the application.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Release 7.40 rev 6 (December 9, 2015)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>
+                        Fedora 23
+                    </li>
+                    <li>
+                        openSUSE Leap 42.1
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>SAP UI Landscape:</b>
+                <ul>
+                    <li>
+                    	The landscape converter now also supports importing connections using load balancing from saplogon.ini without having a separate sapmsg.ini and services file.
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+                        With result lists targeted for multiple fields, it could happen that not all fields have been populated with the chosen value.
+                    </li>
+                    <li>
+                        The input length now is always limited to what the backend will handle.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Data Provider:</b>
+                <ul>
+                    <li>
+						Uploading files with mass data including encoded characters in their file name did not work properly. Function module GUI_UPLOAD was affected.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Calendar Control:</b>
+                <ul>
+                    <li>
+                        Selecting a date in the horizontal calendar has reported the wrong value. 
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <b>Focus:</b>
+                <ul>
+                    <li>
+                        The focus on controls in modal dialogs has been reported incorrectly. 
+                        This for example resulted in usability issues with keyboard navigation in controls with actions involving round trips.  
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Signature Design:</b>
+                <ul>
+                    <li>
+                        When using a system dependent scheme, several components did not adjust their colors appropriately.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>High Contrast Theme:</b>
+                <ul>
+                    <li>
+						Various rendering issues have been fixed.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h3>Release 7.40 rev 5 (October 27, 2015)</h3>
+
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>
+                        OS X 10.11 (El Capitan)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Blue Crystal Theme:</b>
+                <ul>
+                    <li>
+						The background colors of tabstrip and other containers have been changed to better visualize the grouping of the screen.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Input History:</b>
+                <ul>
+                    <li>
+						The values of the history list are now sorted by "last used". 
+						(Due to technical reasons, this is limited only to values used while running this new version.)
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Blue Crystal Theme:</b>
+                <ul>
+                    <li>
+                        DropDown ListBoxes with highlight property set have been displayed using wrong colors.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Corbu Theme:</b>
+                <ul>
+                    <li>
+						There has been an issue with the disabled state of the "new session" icon in the toolbar in 7.40 rev 4. 
+						This caused broken logon screen for back-ends supporting the "new session" button when not using SNC.
+						This also affected Signature Design or High Contrast theme, in case the "Use Corbu-style icons" option was active.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Signature Design:</b>
+                <ul>
+                    <li>
+                        When using a non-default scheme, several components did not adjust their colors appropriately.
+                    </li>
+                    <li>
+                        The toolbar in modal dialogs has been rendered incorrectly. 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Data Provider:</b>
+                <ul>
+                    <li>
+						Downloading files with mass data including encoded characters in their file name did not work properly. Function module GUI_DOWNLOAD was affected.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Scripting:</b>
+                <ul>
+                    <li>
+						Pressing a toggle button in the toolbar control by scripting did not work. 
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Release 7.40 rev 4 (August 18, 2015)</h3>
+
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>
+                        Fedora 22
+                    </li>
+                    <li>
+                        Windows 10
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Localization:</b> 
+                Texts in dialogs coming from the Java runtime like confirmation 
+                and options dialogs are now translated the supported languages.
+            </li>
+			<li>
+		        <b>Modal Dialogs:</b>
+                <ul>
+                    <li>
+                        Sometimes the buttons in the toolbar of modal dialogs do not fit into the modal dialog 
+                        with the size set by the backend. As a result buttons are cut off. 
+                        Now the width of the dialog is increased to no longer truncate the toolbar content 
+                        (except in those cases, where changing the dialog size would cause side effects).
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                        It is now possible to open a context menu on the title and header area.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+		        <b>Rendering:</b>
+                <ul>
+                    <li>
+                        The usage of a faster drawing API of Java introduced in 7.40 rev 3 has caused some artefacts 
+                        in various environments depending on the OS resp. Linux distribution, graphics card and driver.
+                        A workaround has been implemented without falling back to the slower performance of previous releases.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+                        While using the enhanced search, it could happen that the same text typed before was filled into another input field as well.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Signature Design:</b>
+                <ul>
+                    <li>
+                        Highlighted text in some places was hard to read because of using a wrong foreground color when a scheme other then the default was used.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>TextEdit Control:</b>
+                <ul>
+                    <li>
+                        The sequence of ABAP calls SET_TEXT_AS_R3TABLE, GET_TEXT_AS_R3TABLE and again SET_TEXT_AS_R3TABLE 
+                        in DEFINE code for the control CL_GUI_TEXTEDIT resulted in displaying an empty text.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Tree Control:</b>
+                <ul>
+                    <li>
+                        In a special situation, an exception has caused the control to no longer repaint and react to user input.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Blue Crystal:</b>
+                <ul>
+                    <li>
+                        Checkmark icons in menues have not been displayed.
+                    </li>
+                    <li>
+                        Menu separators have been missing.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h3>Release 7.40 rev 3 (June 25, 2015)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+                        Support for limiting the search text to the field length has been implemented.
+                    </li>
+                    <li>
+                        It is now possible to continuously type also while a search request is currently in process.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>DropDown Listbox:</b>
+                <ul>
+                    <li>
+                        The feature to navigate and select an item by typing multiple characters has been implemented.
+                    </li>
+                    <li>
+                         Navigating in the list using the keyboard is now consistent with SAP GUI for Windows.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Calendar Control:</b>
+                <ul>
+                    <li>
+                        Calendar Control now is based on the Date and Time API introduced in Java SE 8. 
+                        This has not only greatly simplified the implementation but also added the possibility to support different calendaring systems. 
+                    </li>
+                </ul>
+            </li>
+<!--
+            <li>
+                <b>Printing:</b>
+                <ul>
+                    <li>
+                        Access method F now is also routed to the control based printing, which is used for access method G. 
+                    </li>
+                </ul>
+            </li>
+-->
+            <li>
+				<b>SAPInfo Control</b>
+				(ABAP class
+				CL_GUI_FRONTEND_SERVICES):
+                <ul>
+                    <li>
+						For Linux and OS X, the handling of paths has been made more robust regarding ABAP coding using the wrong path separator.
+                    </li>
+            		<li>
+            			In method EXECUTE the parameter DEFAULT_DIRECTORY now is honored in case the document or application path is relative.
+            		</li>
+                </ul>
+            </li>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>
+                        A new version of the component to display PDFs is improving font management for some languages.
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <b>OS X only:</b>
+                <ul>
+                    <li>
+                        The rendering performance has been improved by using imaging API, that is hardware accelerated also on OS X. 
+                        This also reduces resource consumption.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                        The rendering of disabled line selection buttons has been corrected.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                        The query for the background color has returned a wrong value, which in some cases resulted in unreadable text.
+                    </li>
+                    <li>
+                        When running embedded in Eclipse, problems with URLStreamHandlers resulted in showing empty areas instead of html content.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Tree Control:</b>
+                <ul>
+                    <li>
+                        An issue where calling CL_GUI_COLUMN_TREE->ADJUST_COLUMN_WIDTH has calculated an incorrect column width has been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>
+                        Running with de-CH locale, the EURO sign has not been displayed.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Release 7.40 rev 2 (April 7, 2015)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Blue Crystal:</b>
+                <ul>
+                    <li>
+                        The icon font has been updated. 
+                        The main color has been changed from blue to dark gray in order 
+                        to be more consistent with the Fiori design.
+                    </li>
+                    <li>
+                        The background colors of read only elements have been harmonized.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Splitter Control:</b>
+                <ul>
+                    <li>
+                        Support for the visibility property of the splitter sash has been implemented.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>
+                        A new version of the component to display PDFs is improving font substitution and parsing support for inline images.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Scripting:</b>
+                <ul>
+                    <li>
+                        The scripting API of InputField and ComboBox control have been updated.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Sounds:</b>
+                <ul>
+                    <li>
+                        The sound clips have been updated and are now in sync with SAP GUI for Windows.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+                <b>Table Control:</b>
+                <ul>
+                    <li>
+                        The rendering of disabled line selection buttons has been corrected.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Html Control:</b>
+                <ul>
+                    <li>
+                        XML content has not been displayed at all. Now at least texts outside tags and attributes are displayed.
+                    </li>
+                    <li>
+                        In some cases, buttons in html forms did not fire an event to the backend.
+                    </li>
+                    <li>
+                        Launching an external browser using the DETACH_URL_IN_BROWSER of 
+                        ABAP class CL_GUI_HTML_VIEWER did not work.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Sounds:</b>
+                <ul>
+                    <li>
+                        A bug causing more and more threads to be added to the audio output list 
+                        when playing sound has been fixed.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Release 7.40 rev 1 (February 12, 2015)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>
+                        Fedora 21
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Blue Crystal:</b>
+                <ul>
+                    <li>
+                        The rendering part of Design Window Decoration (option for themes) has been improved.
+                    </li>
+                    <li>
+                        Rendering of some icons has been adjusted.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>SAP UI Landscape:</b>
+                <ul>
+                    <li>
+                    	When private connection definitions are migrated from the old 7.30 format to SAP UI Landscape, a message is displayed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+						The functionality for filling multiple fields at once with one selection in a search result list has been added.
+                    </li>
+                    <li>
+						Some issues with Enhanced Search for input fields inside a Table Control have been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Calendar Control:</b>
+                <ul>
+                    <li>
+                        Positioning the current date at the beginning and the end of the calendar window is now supported.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Toolbar Control:</b>
+                <ul>
+                    <li>
+                        Support for right aligned toolbars has been implemented.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Html Control:</b>
+                <ul>
+                    <li>
+                        Support for methods ENABLE_SAPSSO (ABAP correction part of <a href="https://launchpad.support.sap.com/#/notes/2127239" target="_blank">SAP note 2127239</a> required), DETACH_URL_IN_BROWSER, 
+                        GetCharsetString and ENABLE_SIMPLEBROWSING in CL_GUI_HTML_VIEWER has been implemented.
+                    </li>
+                </ul>
+            </li>
+		</ul>
+        <b>Bugfixes</b>
+        <ul>
+            <li>
+		        <b>SAP UI Landscape:</b>
+                <ul>
+                    <li>
+						Some connections have not been migrated correctly when no connectionTree.xml file was present 
+						or when the connection was not included in the connectionTree.xml file.
+                    </li>
+                    <li>
+                    	Overriding the automatic codepage selection of the application server by adding encoding parameters in the connection string did not work.
+                    </li>
+                    <li>
+                    	SNC has not been activated when only setting sncname without sncqop in the connection string.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Application Toolbar</b>
+                <ul>
+                    <li>
+						In rare cases, it could happen that one or two buttons on the left of the Application Toolbar were missing.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Enhanced Search:</b>
+                <ul>
+                    <li>
+						The shortcut key to activate the enhanced search mode also worked on fields not enabled for enhanced search.
+                    </li>
+                    <li>
+						Some issues with Enhanced Search for input fields inside a table control have been solved.
+                    </li>
+                </ul>
+            </li>
+            <li>
+				<b>SAPInfo Control</b>
+				(ABAP class
+				CL_GUI_FRONTEND_SERVICES):
+                <ul>
+                    <li>
+						The return value of method IS_SCRIPTING_ACTIVE sometimes has been wrong.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Tree Control:</b>
+                <ul>
+                    <li>
+                        In some cases it has been possible to click cell content that was disabled.
+                    </li>
+                    <li>
+						In case the width of the hierarchy column was set to 0, it could happen that containing nodes have not been displayed.
+                    </li>
+                    <li>
+						Sometimes nodes were displayed even when set to invisible by backend.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Grid Control:</b>
+                <ul>
+                    <li>
+                        After rearranging rows or columns in merged rows or columns, the text could disappear.
+                    </li>
+                    <li>
+                        Missing scripting API has been added.
+                    </li>
+                    <li>
+                        In some screens ABAP dumps could happend when evaluating the feature set of the Grid Control.
+                    </li>
+                    <li>
+                        The selection model has been reimplemented to solve some inconsistencies.
+                    </li>
+                    <li>
+                        The background color of some read-only cells has been incorrect.
+                    </li>
+                    <li>
+                        In some cases it has been possible to chance the selection of a DropDown ListBox although it was set to be read-only.
+                    </li>
+                    <li>
+                        DropDown ListBoxes set to read-only erratically have shown a blinking cursor when having the focus.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Table Control:</b>
+                <ul>
+                    <li>
+                        Missing Scripting API visibleRowCount, rowCount and getCell has been added.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Display of PDF based Content:</b>
+                <ul>
+                    <li>
+                        The detection inside the Html Control to display PDF in some cases did not work.
+                    </li>
+                </ul>
+            </li>
+            <li>
+		        <b>Progress Indicator:</b>
+                <ul>
+                    <li>
+                        When animation was off, the progress indicator waiting for the next screen has been displayed without any delay.
+                    </li>
+                </ul>
+            </li>
+		</ul>
+
+
+        <h3>Release 7.40 (December 3, 2014)</h3>
+        <b>Enhancements and New Features</b>
+        <ul>
+            <li>
+                <b>Support for New OS Versions:</b>
+                <ul>
+                    <li>
+                        openSUSE 13.2
+                    </li>
+                    <li>
+                        SUSE Linux Enterprise Desktop 12
+                    </li>
+                    <li>
+                        SUSE Linux Enterprise Server 12
+                    </li>
+<!--
+                    <li>
+                        Fedora 21
+                    </li>
+-->
+                    <li>
+                        Red Hat Enterprise Linux 7 
+                    </li>
+                    <li>
+                        OS X 10.10 (Yosemite)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Support for Java SE 8</b>
+            </li>
+
+            <li>				
+				<b>Blue Chrystal Theme:</b>  
+				It is the standard theme of Fiori applications and has been adapted to the specific needs of SAP GUI. 
+				Blue Chrystal is fully compatible with the previous themes and comes with a new color palette 
+				and font based icons which are better scalable.
+            </li>
+            <li>
+                <b>SAP UI landscape:</b>
+                A unified UI landscape aligned with SAP GUI for Windows and Netweaver Business Client for Windows has been implemented.
+            </li>
+            <li>
+                <b>Localization:</b> 
+                Texts displayed by SAP GUI for Java itself like in SAP Logon, 
+                Preferences and other dialogs are now translated in many languages.
+            </li>
+          	<li>
+                <b>Html Control:</b>
+                The new embedded browser component is based on WebKit which provides a better user experience and supports current html standards. 
+            </li>
+            <li>
+                <b>Enhanced Search:</b>
+                Input fields now support the HANA based enhanced search. 
+            </li>
+            <li>
+                <b>New Controls:</b>
+                Dropdown listbox, input- and search fields are now available for the toolbar control in IDA ALV.
+            </li>
+            <li>
+                <b>User Manual:</b>
+                The user manual has been reviewed, extended and comes in a new format. 
+            </li>
+            <li>
+                <b>Scripting:</b>
+                Scripting is now based on Nashorn, the JavaScript engine part of JDK 8. 
+            </li>
+ 
+		</ul>
+
+
+
+        <a href="old.html">More</a>
+        <br/>
+        <br/>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://
+www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="generator" content=
+        "HTML Tidy, see www.w3.org" />
+        <meta http-equiv="content-type" content=
+        "text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/documentation.css?x=19008365611176892"/>
+
+        <title>Missing Features</title>
+    </head>
+
+    <body>
+        <h2>Release Notes - Missing Features</h2>
+
+        <h3>Release 7.50 rev 6 (April 9, 2019)</h3>
+
+        <p>The following list contains features that are supported
+        by the SAPGUI for the Windows Environment, but which are
+        not yet available for the SAPGUI for the Java
+        Environment..</p>
+
+        <ul>
+	        <li>
+	            <b>Office-Integration </b>
+	            with regard to embedding Office documents 
+	            inside the SAP GUI screen or controling Office programs by  
+	            automation is not supported. However downloading and opening 
+	            documents is possible, opening of course depends on the installed  
+	            Office products on the client. 
+	        </li>
+
+            <li><b>Some ActiveX-controls</b> part of SAP GUI for
+            Windows used for special purposes are not available as
+            JavaBean in SAP GUI for Java, for example</li>
+
+            <li style="list-style: none">
+                <ul>
+                    <li>SAPscript ( <a target="_blank" href=
+                    "https://service.sap.com/sap/support/notes/100358">
+                    SAP Note 100358</a>)</li>
+
+                    <li>New ABAP editor ( <a target="_blank" href=
+                    "https://service.sap.com/sap/support/notes/843289">
+                    SAP Note 843289</a>)</li>
+                </ul>
+            </li>
+
+            <li><b>Search Help Control</b> is not supported (the
+            old style F4 help window is used instead, offering the
+            same functionality).</li>
+
+            <li><b>CL_GUI_FRONTEND_SERVICES:</b> Some methods of
+            this class are not functional using SAP GUI for Java
+            because they are not appropriate for a Java application
+            (like "current directory"), required resources (like
+            the Windows Registry) or Java APIs are not
+            available.</li>
+
+            <li>
+            	<b>Html Control</b>: Rendering XML as a tree is currently not supported. 
+            	Text outside the XML Tags is displayed, but XML tags and content of attributes are not shown.
+            	There is a <a target="_blank" href="http://javafx-jira.kenai.com/browse/RT-19172">feature request</a> at Oracle.
+			</li>
+			
+            <li><b>Graphical Screen Painter</b> is not available.
+            The alphanumeric layout editor is supported.</li>
+
+            <li><b>Gantt (ABAP class CL_GUI_BARCHART) and Net (ABAP
+            class CL_GUI_NETCHART) Graphics</b> are not available
+            as in SAP GUI for Windows, where these components are
+            available as ActiveX controls.</li>
+
+            <li><b>Graphics Add-ons and GMUX</b> are no longer part
+            of SAP GUI for Java. For details see <a target=
+            "_blank" href=
+            "https://service.sap.com/sap/support/notes/1418688">SAP
+            Note 1418688</a>.</li>
+
+            <li><b>Archive Link Viewer</b> support is not yet fully
+            integrated into the GUI. Currently, it is only possible
+            to control external viewers by means of WS_EXECUTE
+            calls.</li>
+
+            <li><b>Front-End Printing</b> needs to be done using
+            access method 'G', the new printing architecture for
+            all platforms supported by SAP GUI for Java. See <a
+            target="_blank" href=
+            "https://service.sap.com/sap/support/notes/821519">SAP
+            Note 821519</a> for details.</li>
+
+            <li><b>eCATT</b> is not supported.</li>
+
+            <li><b>Chart Control</b>: copy/paste is not yet
+            available.</li>
+
+            <li><b>Writing Systems:</b> Languages requiring
+            bidirectional text input/output are not supported.</li>
+        </ul>
+        <b>Transaction Classification:</b> For information, on
+        whether a specific transaction can be used with SAP GUI for
+        Java, refer to the transaction classification (transaction
+        SE93).
+    </body>
+</html>
+

@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+          "HTML Tidy, see www.w3.org" />
+    <meta http-equiv="content-type" content=
+          "text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/documentation.css?x=19008365611176892"/>
+
+    <title>System Requirements</title>
+  </head>
+
+  <body>
+    <h2>System Requirements</h2>
+
+    <ol>
+      <li><a href="#Browser">Browser applet mode</a></li>
+
+      <li><a href="#Logon">SAP Logon configuration</a></li>
+
+      <li><a href="#Backend">Back-end requirements</a></li>
+
+      <li><a href="#Java">Java</a></li>
+
+      <li><a href="#Java">Java FX</a></li>
+
+      <li><a href="#Linux">Linux</a></li>
+
+      <li><a href="#MacOSX">OS X</a></li>
+
+      <li><a href="#Windows">Windows</a></li>
+    </ol>
+
+    <h2><a name="Browser">Browser applet mode</a></h2>
+
+    <p>
+      For running SAP GUI for Java as an applet in a browser, please also refer to <a target="_blank" href=
+      "https://service.sap.com/sap/support/notes/1831420">SAP Note 1831420</a> regarding security settings.
+    </p>
+    <p>
+      For the current state and future plans regarding the Applet functionality please refer to <a href="http://help.sap.com/disclaimer?site=https://service.sap.com/sap/support/notes/2317316" target="_blank">SAP Note 2317316</a>.
+    </p>
+
+
+    <h2><a name="Logon">SAP Logon configuration</a></h2>
+
+    <p>
+      For information how to setup the connections repository for SAP Logon or how to migrate the configuration used in SAP GUI for Java 7.30, please refer to the SAP UI Landscape Configuration Guide .
+    </p>
+
+    <h2><a name="Backend">Back-end requirements</a></h2>
+
+    <p>
+      Please check following notes, if they are applicable to your backend system.
+    </p>
+
+
+    <ul>
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2733338">2733338 - DIAG GROUPBOX: Fields below invisible frame are moved</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2696386">2696386 - DIAG GROUPBOX: Set Cursor</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2597819">2597819 - DIAG GROUPBOX: Missing fields</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2555350">2555350 - DIAG GROUPBOX: Inputs in loop fields</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2540045">2540045 - DIAG GROUPBOX: Frames cut step loops</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2409864">2409864 - DIAG GROUPBOX: SET CURSOR</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2361396">2361396 - DIAG GROUPBOX: get cursor</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2357131">2357131 - DIAG GROUPBOX: Invalid GUI input data FOCUS DATA</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2326486">2326486 - DIAG GROUPBOX: Fields in invisible frames are shifted</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2226822">2226822 - DIAG GROUPBOX: Input fields</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2225026">2225026 - DIAG GROUPBOX: Context menu</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2076384">2076384 - DIAG GROUPBOX enhancement</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2634460">2634460 - FM 'REGISTRY_GET': Abort message 00 122 'gmux not active'</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2657629">2657629 - Function module 'WS_QUERY': Termination message 00 122 'gmux not active'</a>
+      </li>
+
+      <li>
+	       <a target="_blank" href="https://launchpad.support.sap.com/#/notes/2498886">2498886 - DIAG: core in diagograph()</a>
+      </li>
+
+    </ul>
+    <p>
+      Issues with screens containing group boxes and termination messages with 'gmux not active' are likely caused by missing corrections that are part of these notes.
+    </p>
+
+
+    <h2><a name="Java">Java</a></h2>
+
+    <p>
+      In order to have the latest security and bug-fixes, it is highly recommended to use the current Java update.
+    </p>
+
+    <h2><a name="Java FX">Java FX</a></h2>
+    <p>Java FX is needed since it provides the browser component used inside
+    the HTML control.
+    </p>
+
+    <p>Java FX is no longer bundled with the Java VM from Java 11 on.
+    A seperatly installed Open-JFX distribution is therefor needed.
+    </p>
+
+    <p>The Installer has to be told where to find this separate
+    component.
+    </p>
+
+    <h2><a name="Linux">Linux</a></h2>
+
+    <h3>Hardware</h3>
+
+    <ul>
+      <li>Hardware according to the requirements of the Linux distribution on x86 IA-32 and x86 AMD64.</li>
+
+      <li>RAM: 4GB recommended for better performance</li>
+    </ul>
+
+    <h3>Software</h3>
+
+    <ul>
+      <li>
+      	<a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle Java SE 8 32- or 64-bit</a> (update 40 or newer)
+      	 or <a target="_blank" href="https://sapmachine.io">SapMachine 11</a> and <a target="_blank" href="https://openjfx.io">OpenJFX 11</a> 64-bit only
+      </li>
+
+      <li>C++ runtime: libstdc++.so.6<br />
+      This library is generally included with current
+      distributions, at least they all have packages with gcc
+      4.1 which include this library. For information where
+      to find the packages required to install, please refer
+      to <a target="_blank" href=
+      "https://service.sap.com/sap/support/notes/909250">SAP
+      Note 909250</a>.</li>
+
+      <li>xdg-utils, in particular xdg-icon-resource, xdg-mime and xdg-open
+      are required to make the desktop integration work.
+      </li>
+
+      <li>
+        Supported Linux distributions:<br />
+
+        <ul>
+          <li>SUSE Linux Enterprise Desktop 12 and 15</li>
+
+          <li>SUSE Linux Enterprise Server 12 and 15</li>
+
+          <li>openSUSE Leap 42.3 and 15.0</li>
+
+          <li>Fedora 28 and 29</li>
+
+          <li>Red Hat Enterprise Linux 7</li>
+
+          <li>Ubuntu 16.04 and 18.04</li>
+
+        </ul>
+
+        <p>These Distributions are tested and officially
+        supported.</p>
+
+        <p>We expect that SAP GUI runs with other
+        distributions as well and appreciate any feedback
+        about potential problems.</p>
+
+        <p>Make sure the distribution you want to use is
+        supported by your Java vendor!</p>
+
+        <p>You can find <a target="_blank" href="http://www.oracle.com/technetwork/java/javase/certconfig-2095354.html">Oracle's support statements</a> at <a
+        target="_blank" href=
+        "http://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#A1097144">
+        http://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#A1097144</a></p>
+
+
+        <p>For supported locales and writing systems,
+        please refer to <a target="_blank" href=
+        "http://www.oracle.com/technetwork/java/javase/java8locales-2095355.html">
+        http://www.oracle.com/technetwork/java/javase/java8locales-2095355.html</a></p>
+
+        <p>SAP tries to make sure that the SAP GUI for the
+        Java Environment runs on other combinations as
+        well. But please note that the solution of problems
+        caused by the Java Runtime depends on the support
+        of the Java vendor.</p>
+      </li>
+    </ul>
+
+    <h3>National language support</h3>
+
+    <p>In case of missing glyphs of Southeast Asian languages
+    indicated by the missing character symbol (usually rendered
+    as an open rectangle), check the fontconfig.properties used
+    by the JVM refer to the correct fonts installed in the
+    system.</p>
+
+    <p>The use of UTF-8 locales is strongly encouraged,
+    especially for japanese, korean or chinese
+    environments.</p>
+
+    <p>The japanese input method kinput2 is known to be
+    problematic when using java applets with firefox older than
+    version 2.0. In this case the combination of scim /anthy
+    may be an alternative input method frontend.</p>
+
+    <h2><a name="MacOSX">OS X</a></h2>
+
+    <h3>Hardware</h3>
+
+    <ul>
+      <li>
+        Hardware according to the requirements of the OS X version.
+      </li>
+    </ul>
+
+    <h3>Software</h3>
+
+    <ul>
+      <li>
+      	<a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle Java SE 8</a> (update 40 or newer)
+      	 or <a target="_blank" href="https://sapmachine.io">SapMachine 11</a> and <a target="_blank" href="https://openjfx.io">OpenJFX 11</a><br/>
+      	 To run SAP GUI for Java as stand alone application, the installation of the JDK is required.
+      </li>
+
+      <li>macOS Sierra 10.12</li>
+
+      <li>macOS High Sierra 10.13.2 and newer<br/>
+      With macOS High Sierra older than 10.13.2 there is an issue with the Mac menus.
+      </li>
+
+      <li>macOS Mojave 10.14<br/>
+      However, there are some <a href="../relnotes/issues.html">known issues</a>.
+      </li>
+
+      <li>It might run fine on older versions as well, but this is neither tested nor officially supported.</li>
+
+
+    </ul>
+
+    <p>
+      Since SAP GUI for Java is not yet supporting Gatekeeper, it might be required
+      to explicitly exempt it from Gatekeeper in order to be allowed to launch the SAP GUI for Java application.
+      Please refer to <a target="_blank" href="http://support.apple.com/kb/ht5290">
+      Apple's knowledge base article referring Gatekeeper</a> for details.
+    </p>
+
+    <h2><a name="Windows">Windows</a></h2>
+
+    <h3>Hardware</h3>
+
+    <ul>
+      <li>Hardware according to the requirements of the Windows version on x86 IA-32 and x86 AMD64.</li>
+
+      <li>RAM: 4GB recommended for better performance</li>
+    </ul>
+
+    <h3>Software</h3>
+
+    <ul>
+      <li>
+        OS versions
+        <ul>
+          <li>
+            Windows 7 32- or 64-bit (Professional, Ultimate and
+            Enterprise Edition)
+          </li>
+          <li>
+            Windows 8.1 32- or 64-bit (Professional and Enterprise Edition)
+          </li>
+          <li>
+            Windows 10 32- or 64-bit (Professional and Enterprise Edition)
+          </li>
+        </ul>
+      </li>
+      <li>
+        Visual C++ Libraries VS 2012 11.0.60610 (x86 resp. x64)
+        <br/>
+        This package (vcredist_x86.exe respectively vcredist_x64.exe) is available in the
+        bin directory of the SAP GUI for Java installation.
+      </li>
+      <li>
+      	<a target="_blank" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle Java SE 8 32- or 64-bit</a> (update 40 or newer)
+      	 or <a target="_blank" href="https://sapmachine.io">SapMachine 11</a> and <a target="_blank" href="https://openjfx.io">OpenJFX 11</a> 64-bit only
+      </li>
+      <li>
+        Regarding Java plug-in, please refer to <a target="_blank"
+	href="http://java.com/en/download/faq/java_win64bit.xml">
+	http://java.com/en/download/faq/java_win64bit.xml</a>
+      </li>
+      <li>
+        Accessibility: When using JAWS, the latest version
+        10 is required due to issues in older versions.
+      </li>
+    </ul>
+
+    <h3>National language support</h3>
+
+    <p>Please make sure to install a complete international
+    version of the JRE, in particular support for Extended
+    Encoding Set (contained in lib/charsets.jar of the JRE).
+    Please refer to <a href=
+    "http://docs.oracle.com/javase/8/docs/technotes/guides/intl/encoding.doc.html">
+    http://docs.oracle.com/javase/8/docs/technotes/guides/intl/encoding.doc.html</a>
+    for details. An existing installation of JRE can be
+    modified in the "Programs and Features" Control Panel
+    using the "Change" button. There support for additional
+    languages can be added.</p>
+
+    <h3>Access to Windows Registry using REG.EXE</h3>
+
+    <ul>
+      <li>At install and runtime read access is required for
+      following registry keys:<br />
+      <br />
+      <code>HKCR\Mime\Database\Content Type<br />
+      HKLM\System\CurrentControlSet\Control\Session
+      Manager\Environment<br />
+      HKLM\Software\Microsoft\Windows\CurrentVersion\App
+      Paths<br />
+      HKLM\Software\Microsoft\Windows
+      NT\CurrentVersion\ProfileList<br />
+      HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\&lt;gui
+      version&gt;<br />
+      HKLM\Software\Microsoft\Windows\CurrentVersion<br />
+      HKLM\Software\SAP\General\Appearance\Themes\Default<br />
+      HKCU\Environment<br />
+      HKCU\Volatile Environment</code><br />
+      </li>
+
+      <li style="list-style: none"><br />
+      </li>
+
+      <li>Write access is required for following registry key
+      at install/deinstall time:<br />
+      <br />
+      <code>HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\&lt;gui
+      version&gt;</code><br />
+      <br />
+      This is needed for creating/removing the deinstall
+      entry in the "Programs and Features" Control Panel.</li>
+    </ul>
+  </body>
+</html>
